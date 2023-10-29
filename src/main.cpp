@@ -4,16 +4,16 @@
 #include <Adafruit_HMC5883_U.h>
 #include <TinyGPSPlus.h>
 
+//SERIAL2 PORTS - GPS COMM
+#define RXD2 16
+#define TXD2 17
+
 //HARDWARE SETUP
 /* Assign a unique ID to this sensor at the same time */
 Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
 
 //inyGPSPlus object
 TinyGPSPlus gps; 
-
-//SERIAL2 PORTS - GPS COMM
-#define RXD2 16
-#define TXD2 17
 
 //GPS DATA
 typedef struct {
