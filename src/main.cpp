@@ -15,16 +15,19 @@ TinyGPSPlus gps;
 #define RXD2 16
 #define TXD2 17
 
+//GPS DATA
 typedef struct {
     float lat, lng;
     unsigned long date_value, time_value;
     unsigned short speed, altitude;
 } gps_data;
 
+//HCSR04 DATA
 typedef struct {
     unsigned long bow_sen, stern_sen, port_sen, starb_sen;
 } usonic_sen;
 
+//COMPASS DATA
 typedef struct {
     float x, y, z, heading;
 } compass_data;
